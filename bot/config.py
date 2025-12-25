@@ -16,9 +16,10 @@
 from decouple import config
 
 try:
-    APP_ID = config("APP_ID", cast=int)
-    API_HASH = config("API_HASH")
-    BOT_TOKEN = config("BOT_TOKEN")
+    APP_ID = config("39694149", cast=int)
+    API_HASH = config("dddb292ba84c052b78aa1a4543877b12")
+    BOT_TOKEN = config("8190883981:AAEHJ3UifRjF94KqIJ4IjjUO8P96YfmFXeE
+")
     DEV = 1287276743
     OWNER = config("OWNER")
     ffmpegcode = ["-preset faster -c:v libx265 -s 854x480 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title=Encoded By AnshuSharma (https://github.com/Anshusharma75/TG-videoCompress)' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1"]
